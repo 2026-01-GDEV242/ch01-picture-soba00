@@ -48,25 +48,28 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            //Setting up the hills that make up the background:
+            //BUILD THE BACKGROUND-
+            //Setting up the two hills that make up the background:
+            //hill one
             hillOne.changeColor("yellow");
             hillOne.moveHorizontal(100);
             hillOne.moveVertical(-40);
             hillOne.changeSize(80);
             hillOne.makeVisible();
-            
+            //hill two
             hillOne.changeColor("yellow");
             hillOne.moveHorizontal(100);
             hillOne.moveVertical(-40);
             hillOne.changeSize(80);
             hillOne.makeVisible();
+            //setting up the sun
+            sun.changeColor("yellow");
+            sun.moveHorizontal(100);
+            sun.moveVertical(-40);
+            sun.changeSize(80);
+            sun.makeVisible();
             
             
-            //Setting up the tunk of the tree
-            trunk.moveHorizontal(-140);
-            trunk.moveVertical(20);
-            trunk.changeSize(120);
-            trunk.makeVisible();
             //
             //window.changeColor("black");
             //window.moveHorizontal(-120);
@@ -74,26 +77,48 @@ public class Picture
             //window.changeSize(40);
             //window.makeVisible();
             //
+            
+            //BUILD THE TREE-
+            //Setting up the tunk of the tree
+            trunk.moveHorizontal(-140);
+            trunk.moveVertical(20);
+            trunk.changeSize(120);
+            trunk.makeVisible();
+            //Setting up the layers of foliage:
+            //Layer One
             treeLayerOne.changeSize(60, 180);
             treeLayerOne.moveHorizontal(20);
             treeLayerOne.moveVertical(-60);
             treeLayerOne.makeVisible();
-            
+            //Layer Two
             treeLayerTwo.changeSize(60, 180);
             treeLayerTwo.moveHorizontal(20);
             treeLayerTwo.moveVertical(-60);
             treeLayerTwo.makeVisible();
-            
+            //Layer Three
             treeLayerThree.changeSize(60, 180);
             treeLayerThree.moveHorizontal(20);
             treeLayerThree.moveVertical(-60);
             treeLayerThree.makeVisible();
-    
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            //Ornaments
+            //First
+            //ballOne.changeColor("yellow");
+            //ballOne.moveHorizontal(100);
+            //ballOne.moveVertical(-40);
+            //ballOne.changeSize(80);
+            //ballOne.makeVisible();
+            //Second
+            //ballTwo.changeColor("yellow");
+            //ballTwo.moveHorizontal(100);
+            //ballTwo.moveVertical(-40);
+            //ballTwo.changeSize(80);
+            //ballTwo.makeVisible();
+            //Third
+            //ballThree.changeColor("yellow");
+            //ballThree.moveHorizontal(100);
+            //ballThree.moveVertical(-40);
+            //ballThree.changeSize(80);
+            //ballThree.makeVisible();
             
             
             drawn = true;
