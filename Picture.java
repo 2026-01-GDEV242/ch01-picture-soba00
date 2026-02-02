@@ -48,27 +48,53 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+            hillOne.changeColor("yellow");
+            hillOne.moveHorizontal(100);
+            hillOne.moveVertical(-40);
+            hillOne.changeSize(80);
+            hillOne.makeVisible();
             
+            hillOne.changeColor("yellow");
+            hillOne.moveHorizontal(100);
+            hillOne.moveVertical(-40);
+            hillOne.changeSize(80);
+            hillOne.makeVisible();
+            
+            
+            //Setting up the tunk of the tree
+            trunk.moveHorizontal(-140);
+            trunk.moveVertical(20);
+            trunk.changeSize(120);
+            trunk.makeVisible();
+            //
             window.changeColor("black");
             window.moveHorizontal(-120);
             window.moveVertical(40);
             window.changeSize(40);
             window.makeVisible();
-    
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            //
+            treeLayerOne.changeSize(60, 180);
+            treeLayerOne.moveHorizontal(20);
+            treeLayerOne.moveVertical(-60);
+            treeLayerOne.makeVisible();
+            
+            treeLayerTwo.changeSize(60, 180);
+            treeLayerTwo.moveHorizontal(20);
+            treeLayerTwo.moveVertical(-60);
+            treeLayerTwo.makeVisible();
+            
+            treeLayerThree.changeSize(60, 180);
+            treeLayerThree.moveHorizontal(20);
+            treeLayerThree.moveVertical(-60);
+            treeLayerThree.makeVisible();
     
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
+            
+            
             drawn = true;
         }
     }
