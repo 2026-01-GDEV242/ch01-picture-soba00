@@ -11,10 +11,16 @@
  */
 public class Picture
 {
-    private Square wall;
+    private Square trunk;
     private Square window;
-    private Triangle roof;
+    private Triangle treeLayerOne;
+    private Triangle treeLayerTwo;
+    private Triangle treeLayerThree;
+    private Circle hillOne;
+    private Circle hillTwo;
     private Circle sun;
+    private Person fellaOne;
+    private Person fellaTwo;
     private boolean drawn;
 
     /**
@@ -22,10 +28,17 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
+        trunk = new Square();
         window = new Square();
-        roof = new Triangle();  
+        treeLayerOne = new Triangle();
+        treeLayerTwo = new Triangle();
+        treeLayerThree = new Triangle();
         sun = new Circle();
+        hillOne = new Circle();
+        hillTwo = new Circle();
+        fellaOne = new Person();
+        fellaTwo = new Person();
+        
         drawn = false;
     }
 
