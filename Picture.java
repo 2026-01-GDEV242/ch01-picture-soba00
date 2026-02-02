@@ -48,6 +48,7 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            //Setting up the hills that make up the background:
             hillOne.changeColor("yellow");
             hillOne.moveHorizontal(100);
             hillOne.moveVertical(-40);
@@ -67,11 +68,11 @@ public class Picture
             trunk.changeSize(120);
             trunk.makeVisible();
             //
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
+            //window.changeColor("black");
+            //window.moveHorizontal(-120);
+            //window.moveVertical(40);
+            //window.changeSize(40);
+            //window.makeVisible();
             //
             treeLayerOne.changeSize(60, 180);
             treeLayerOne.moveHorizontal(20);
