@@ -1,4 +1,4 @@
-/**
+/*
  * This class represents a simple picture. You can draw the picture using
  * the draw method. But wait, there's more: being an electronic picture, it
  * can be changed. You can set it to black-and-white display and back to
@@ -8,6 +8,13 @@
  * 
  * @author  Michael Kšlling and David J. Barnes
  * @version 2016.02.29
+ */
+
+/**
+ * this class represents a picture of a christmas tree with a few people
+ * celebrating
+ * 
+ * 
  */
 public class Picture
 {
