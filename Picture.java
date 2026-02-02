@@ -19,6 +19,9 @@ public class Picture
     private Circle hillOne;
     private Circle hillTwo;
     private Circle sun;
+    private Circle ballOne;
+    private Circle ballTwo;
+    private Circle ballThree;
     private Person fellaOne;
     private Person fellaTwo;
     private boolean drawn;
@@ -34,6 +37,9 @@ public class Picture
         treeLayerTwo = new Triangle();
         treeLayerThree = new Triangle();
         sun = new Circle();
+        ballOne = new Circle();
+        ballTwo = new Circle();
+        ballThree = new Circle();
         hillOne = new Circle();
         hillTwo = new Circle();
         fellaOne = new Person();
@@ -102,23 +108,23 @@ public class Picture
             treeLayerThree.makeVisible();
             //Ornaments
             //First
-            //ballOne.changeColor("yellow");
-            //ballOne.moveHorizontal(100);
-            //ballOne.moveVertical(-40);
-            //ballOne.changeSize(80);
-            //ballOne.makeVisible();
+            ballOne.changeColor("yellow");
+            ballOne.moveHorizontal(100);
+            ballOne.moveVertical(-40);
+            ballOne.changeSize(80);
+            ballOne.makeVisible();
             //Second
-            //ballTwo.changeColor("yellow");
-            //ballTwo.moveHorizontal(100);
-            //ballTwo.moveVertical(-40);
-            //ballTwo.changeSize(80);
-            //ballTwo.makeVisible();
+            ballTwo.changeColor("yellow");
+            ballTwo.moveHorizontal(100);
+            ballTwo.moveVertical(-40);
+            ballTwo.changeSize(80);
+            ballTwo.makeVisible();
             //Third
-            //ballThree.changeColor("yellow");
-            //ballThree.moveHorizontal(100);
-            //ballThree.moveVertical(-40);
-            //ballThree.changeSize(80);
-            //ballThree.makeVisible();
+            ballThree.changeColor("yellow");
+            ballThree.moveHorizontal(100);
+            ballThree.moveVertical(-40);
+            ballThree.changeSize(80);
+            ballThree.makeVisible();
             
             
             drawn = true;
