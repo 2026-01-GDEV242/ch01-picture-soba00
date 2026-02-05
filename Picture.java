@@ -12,7 +12,7 @@
 
 /**
  * this class represents a picture of a christmas tree with a few people
- * celebrating
+ * celebrating around it
  * 
  * 
  */
