@@ -38,7 +38,8 @@ public class Picture
      */
     public Picture()
     {
-        trunk = new Square();
+        trunk1 = new Square();
+        trunk2 = new Square();
         window = new Square();
         treeLayerOne = new Triangle();
         treeLayerTwo = new Triangle();
@@ -62,6 +63,7 @@ public class Picture
     {
         if(!drawn) {
             //BUILD THE BACKGROUND-
+            /*
             //Setting up the two hills that make up the background:
             //hill one
             hillOne.changeColor("yellow");
@@ -75,6 +77,8 @@ public class Picture
             hillOne.moveVertical(-40);
             hillOne.changeSize(80);
             hillOne.makeVisible();
+            */
+            
             //setting up the sun
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
@@ -93,9 +97,10 @@ public class Picture
             
             //BUILD THE TREE-
             //Setting up the tunk of the tree
+            trunk.changeColor("brown");
             trunk.moveHorizontal(-140);
             trunk.moveVertical(20);
-            trunk.changeSize(120);
+            trunk.changeSize(30);
             trunk.makeVisible();
             //Setting up the layers of foliage:
             //Layer One
@@ -143,10 +148,12 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
+        /*
         wall.changeColor("black");
         window.changeColor("white");
         roof.changeColor("black");
         sun.changeColor("black");
+        */
     }
 
     /**
@@ -154,9 +161,11 @@ public class Picture
      */
     public void setColor()
     {
+        /*
         wall.changeColor("red");
         window.changeColor("black");
         roof.changeColor("green");
         sun.changeColor("yellow");
+        */
     }
 }
