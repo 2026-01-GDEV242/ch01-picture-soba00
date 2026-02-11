@@ -30,6 +30,10 @@ public class Picture
     private Circle ballOne;
     private Circle ballTwo;
     private Circle ballThree;
+    private Circle ballFour;
+    private Circle ballFive;
+    private Circle ballSix;
+    private Circle ballSeven;
     private Person fellaOne;
     private Person fellaTwo;
     private boolean drawn;
@@ -49,6 +53,10 @@ public class Picture
         ballOne = new Circle();
         ballTwo = new Circle();
         ballThree = new Circle();
+        ballFour = new Circle();
+        ballFive = new Circle();
+        ballSix = new Circle();
+        ballSeven = new Circle();
         hillOne = new Circle();
         hillTwo = new Circle();
         fellaOne = new Person();
@@ -126,25 +134,48 @@ public class Picture
             treeLayerThree.moveHorizontal(10);
             treeLayerThree.moveVertical(-25);
             treeLayerThree.makeVisible();
+            
             //Ornaments
+            
             //First
-            ballOne.changeColor("yellow");
-            ballOne.moveHorizontal(100);
-            ballOne.moveVertical(-40);
-            ballOne.changeSize(80);
-            ballOne.makeVisible();
-            //Second
             ballTwo.changeColor("yellow");
-            ballTwo.moveHorizontal(100);
-            ballTwo.moveVertical(-40);
-            ballTwo.changeSize(80);
+            ballTwo.moveHorizontal(-17);
+            ballTwo.moveVertical(15);
+            ballTwo.changeSize(14);
             ballTwo.makeVisible();
+            //Second
+            ballOne.moveHorizontal(0); 
+            ballOne.moveVertical(39); 
+            ballOne.changeSize(10);
+            ballOne.makeVisible();
             //Third
-            ballThree.changeColor("yellow");
-            ballThree.moveHorizontal(100);
-            ballThree.moveVertical(-40);
-            ballThree.changeSize(80);
+            ballThree.changeColor("red");
+            ballThree.moveHorizontal(-40);
+            ballThree.moveVertical(42);
+            ballThree.changeSize(10);
             ballThree.makeVisible();
+            //Fourth
+            ballFour.moveHorizontal(15);
+            ballFour.moveVertical(90);
+            ballFour.changeSize(10);
+            ballFour.makeVisible();
+            //Fifth
+            ballFive.changeColor("red");
+            ballFive.moveHorizontal(18);
+            ballFive.moveVertical(66);
+            ballFive.changeSize(10);
+            ballFive.makeVisible();
+            //Sixth
+            ballSix.changeColor("red");
+            ballSix.moveHorizontal(-55);
+            ballSix.moveVertical(95);
+            ballSix.changeSize(10);
+            ballSix.makeVisible();
+            //Seventh
+            ballSeven.moveHorizontal(-35);
+            ballSeven.moveVertical(65);
+            ballSeven.changeSize(10);
+            ballSeven.makeVisible();
             
             
             drawn = true;
