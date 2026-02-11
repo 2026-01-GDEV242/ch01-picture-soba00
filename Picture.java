@@ -18,7 +18,8 @@
  */
 public class Picture
 {
-    private Square trunk;
+    private Square trunkOne;
+    private Square trunkTwo;
     private Square window;
     private Triangle treeLayerOne;
     private Triangle treeLayerTwo;
@@ -38,8 +39,8 @@ public class Picture
      */
     public Picture()
     {
-        trunk1 = new Square();
-        trunk2 = new Square();
+        trunkOne = new Square();
+        trunkTwo = new Square();
         window = new Square();
         treeLayerOne = new Triangle();
         treeLayerTwo = new Triangle();
@@ -97,26 +98,33 @@ public class Picture
             
             //BUILD THE TREE-
             //Setting up the tunk of the tree
-            trunk.changeColor("brown");
-            trunk.moveHorizontal(-140);
-            trunk.moveVertical(20);
-            trunk.changeSize(30);
-            trunk.makeVisible();
+            trunkOne.changeColor("brown");
+            trunkOne.moveHorizontal(-100);
+            trunkOne.moveVertical(65);
+            trunkOne.changeSize(20);
+            trunkOne.makeVisible();
+            
+            trunkTwo.changeColor("brown");
+            trunkTwo.moveHorizontal(-100);
+            trunkTwo.moveVertical(85);
+            trunkTwo.changeSize(20);
+            trunkTwo.makeVisible();
+            
             //Setting up the layers of foliage:
             //Layer One
-            treeLayerOne.changeSize(60, 180);
-            treeLayerOne.moveHorizontal(20);
-            treeLayerOne.moveVertical(-60);
+            treeLayerOne.changeSize(50, 130);
+            treeLayerOne.moveHorizontal(10);
+            treeLayerOne.moveVertical(10);
             treeLayerOne.makeVisible();
             //Layer Two
-            treeLayerTwo.changeSize(60, 180);
-            treeLayerTwo.moveHorizontal(20);
-            treeLayerTwo.moveVertical(-60);
+            treeLayerTwo.changeSize(40, 120);
+            treeLayerTwo.moveHorizontal(10);
+            treeLayerTwo.moveVertical(-10);
             treeLayerTwo.makeVisible();
             //Layer Three
-            treeLayerThree.changeSize(60, 180);
-            treeLayerThree.moveHorizontal(20);
-            treeLayerThree.moveVertical(-60);
+            treeLayerThree.changeSize(30, 100);
+            treeLayerThree.moveHorizontal(10);
+            treeLayerThree.moveVertical(-25);
             treeLayerThree.makeVisible();
             //Ornaments
             //First
