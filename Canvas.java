@@ -3,7 +3,7 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 
-/**
+/*
  * Canvas is a class to allow for simple graphical drawing on a canvas.
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
@@ -13,6 +13,15 @@ import java.util.*;
  *
  * @version 2016.02.29
  */
+/**
+ *  Modified version of original file to add more colors 
+ * 
+ *  @author (modified) Federico Cadavid Rojas
+ *  @version 2026.02.11
+ * 
+ * 
+ */
+ 
 public class Canvas
 {
     // Note: The implementation of this class (specifically the handling of
