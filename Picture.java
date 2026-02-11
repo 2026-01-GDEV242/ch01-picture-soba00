@@ -11,7 +11,7 @@
  */
 
 /**
- * this class represents a picture of a christmas tree with a few people
+ * this class represents a picture of a christmas tree with a two people
  * celebrating around it
  * 
  * 
@@ -24,7 +24,7 @@ public class Picture
     private Triangle treeLayerOne;
     private Triangle treeLayerTwo;
     private Triangle treeLayerThree;
-    private Circle hillOne;
+    private Circle land;
     private Circle hillTwo;
     private Circle sun;
     private Circle ballOne;
@@ -57,7 +57,7 @@ public class Picture
         ballFive = new Circle();
         ballSix = new Circle();
         ballSeven = new Circle();
-        hillOne = new Circle();
+        land = new Circle();
         hillTwo = new Circle();
         fellaOne = new Person();
         fellaTwo = new Person();
@@ -71,23 +71,8 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            //BUILD THE BACKGROUND-
-            /*
-            //Setting up the two hills that make up the background:
-            //hill one
-            hillOne.changeColor("yellow");
-            hillOne.moveHorizontal(100);
-            hillOne.moveVertical(-40);
-            hillOne.changeSize(80);
-            hillOne.makeVisible();
-            //hill two
-            hillOne.changeColor("yellow");
-            hillOne.moveHorizontal(100);
-            hillOne.moveVertical(-40);
-            hillOne.changeSize(80);
-            hillOne.makeVisible();
-            */
             
+            //BUILD THE BACKGROUND
             //setting up the sun
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
@@ -95,15 +80,14 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             
+            //setting up the land
+            land.changeColor("cyan");
+            land.moveHorizontal(-100);
+            land.moveVertical(300);
+            land.changeSize(1000);
+            land.makeVisible();
             
-            //
-            //window.changeColor("black");
-            //window.moveHorizontal(-120);
-            //window.moveVertical(40);
-            //window.changeSize(40);
-            //window.makeVisible();
-            //
-            
+                        
             //BUILD THE TREE-
             //Setting up the tunk of the tree
             trunkOne.changeColor("brown");
@@ -177,6 +161,17 @@ public class Picture
             ballSeven.changeSize(10);
             ballSeven.makeVisible();
             
+            //Setting up the people
+            //Fella One
+            fellaOne.changeSize(50,25);
+            fellaOne.moveHorizontal(-100);
+            fellaOne.moveVertical(50);
+            fellaOne.makeVisible();
+            //Fella Two
+            fellaTwo.changeSize(50,25);
+            fellaTwo.moveHorizontal(-25);
+            fellaTwo.moveVertical(60);
+            fellaTwo.makeVisible();
             
             drawn = true;
         }
