@@ -15,6 +15,9 @@
  * celebrating around it
  * 
  * 
+ * @author Federico Cadavid Rojas
+ * @version 2026.02.11
+ * 
  */
 public class Picture
 {
@@ -82,9 +85,9 @@ public class Picture
             
             //setting up the land
             land.changeColor("cyan");
-            land.moveHorizontal(-100);
-            land.moveVertical(300);
-            land.changeSize(1000);
+            land.moveHorizontal(-2800);
+            land.moveVertical(90);
+            land.changeSize(5680);
             land.makeVisible();
             
                         
@@ -122,16 +125,16 @@ public class Picture
             //Ornaments
             
             //First
-            ballTwo.changeColor("yellow");
-            ballTwo.moveHorizontal(-17);
-            ballTwo.moveVertical(15);
-            ballTwo.changeSize(14);
-            ballTwo.makeVisible();
-            //Second
-            ballOne.moveHorizontal(0); 
-            ballOne.moveVertical(39); 
-            ballOne.changeSize(10);
+            ballOne.changeColor("yellow");
+            ballOne.moveHorizontal(-17);
+            ballOne.moveVertical(15);
+            ballOne.changeSize(14);
             ballOne.makeVisible();
+            //Second
+            ballTwo.moveHorizontal(0); 
+            ballTwo.moveVertical(39); 
+            ballTwo.changeSize(10);
+            ballTwo.makeVisible();
             //Third
             ballThree.changeColor("red");
             ballThree.moveHorizontal(-40);
@@ -182,12 +185,23 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        /*
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
-        */
+        land.changeColor("black");
+        trunkOne.changeColor("black");
+        trunkTwo.changeColor("black");
+        treeLayerOne.changeColor("black");
+        treeLayerTwo.changeColor("black");
+        treeLayerThree.changeColor("black");
+        sun.changeColor("white");
+        ballOne.changeColor("white");
+        ballTwo.changeColor("white");
+        ballThree.changeColor("white");
+        ballFour.changeColor("white");
+        ballFive.changeColor("white");
+        ballSix.changeColor("white");
+        ballSeven.changeColor("white");
+        fellaOne.changeColor("white");
+        fellaTwo.changeColor("white");
+        
     }
 
     /**
@@ -195,11 +209,21 @@ public class Picture
      */
     public void setColor()
     {
-        /*
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
+        land.changeColor("cyan");
+        trunkOne.changeColor("brown");
+        trunkTwo.changeColor("brown");
+        treeLayerOne.changeColor("green");
+        treeLayerTwo.changeColor("green");
+        treeLayerThree.changeColor("green");
         sun.changeColor("yellow");
-        */
+        ballOne.changeColor("yellow");
+        ballTwo.changeColor("blue");
+        ballThree.changeColor("red");
+        ballFour.changeColor("blue");
+        ballFive.changeColor("red");
+        ballSix.changeColor("red");
+        ballSeven.changeColor("blue");
+        fellaOne.changeColor("black");
+        fellaTwo.changeColor("black");
     }
 }
