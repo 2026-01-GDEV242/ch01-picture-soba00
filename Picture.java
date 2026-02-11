@@ -76,35 +76,33 @@ public class Picture
         if(!drawn) {
             
             //BUILD THE BACKGROUND
-            //setting up the sun
+            //Setting up the sun:
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
-            
-            //setting up the land
+            //Setting up the land:
             land.changeColor("cyan");
             land.moveHorizontal(-2800);
             land.moveVertical(90);
             land.changeSize(5680);
             land.makeVisible();
-            
-                        
-            //BUILD THE TREE-
-            //Setting up the tunk of the tree
+                     
+            //BUILD THE TREE AND PEOPLE
+            //Setting up the tunk of the tree:
+            //Trunk One
             trunkOne.changeColor("brown");
             trunkOne.moveHorizontal(-100);
             trunkOne.moveVertical(65);
             trunkOne.changeSize(20);
             trunkOne.makeVisible();
-            
+            //Trunk Two
             trunkTwo.changeColor("brown");
             trunkTwo.moveHorizontal(-100);
             trunkTwo.moveVertical(85);
             trunkTwo.changeSize(20);
             trunkTwo.makeVisible();
-            
             //Setting up the layers of foliage:
             //Layer One
             treeLayerOne.changeSize(50, 130);
@@ -121,9 +119,7 @@ public class Picture
             treeLayerThree.moveHorizontal(10);
             treeLayerThree.moveVertical(-25);
             treeLayerThree.makeVisible();
-            
-            //Ornaments
-            
+            //Setting up Ornaments:
             //First
             ballOne.changeColor("yellow");
             ballOne.moveHorizontal(-17);
@@ -163,8 +159,7 @@ public class Picture
             ballSeven.moveVertical(65);
             ballSeven.changeSize(10);
             ballSeven.makeVisible();
-            
-            //Setting up the people
+            //Setting up the people:
             //Fella One
             fellaOne.changeSize(50,25);
             fellaOne.moveHorizontal(-100);
