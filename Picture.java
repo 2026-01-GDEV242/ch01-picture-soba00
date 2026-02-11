@@ -186,7 +186,7 @@ public class Picture
         treeLayerOne.changeColor("black");
         treeLayerTwo.changeColor("black");
         treeLayerThree.changeColor("black");
-        sun.changeColor("white");
+        sun.changeColor("black");
         ballOne.changeColor("black");
         ballTwo.changeColor("white");
         ballThree.changeColor("white");
